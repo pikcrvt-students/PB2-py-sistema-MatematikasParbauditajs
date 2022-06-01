@@ -1,4 +1,4 @@
-# Virknes programma (Ver. 0)
+# Virkņu tēmas pārbaudes programma (Ver. 0)
 
 Programma satur sevī matemātikas temata 'Virknes' teoriju, zināšanu pārbaudes un pārbaudes darbus.
 
