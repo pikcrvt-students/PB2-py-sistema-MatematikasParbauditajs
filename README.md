@@ -1,4 +1,4 @@
-# Virkņu tēmas pārbaudes programma (Ver. 0)
+# Virkņu tēmas pārbaudes programma (Ver. 1)
 
 Programma satur sevī matemātikas temata 'Virknes' teoriju, zināšanu pārbaudes un pārbaudes darbus.
 
@@ -13,5 +13,5 @@ git clone https://github.com/pikcrvt-students/PB2-py-sistema-MatematikasParbaudi
 ## Kā izmantot
 
 ```python
-nekas nav gatavs
+Programma piedāvās skolotāja un skolēna opcijas, teorija un testi ir pabeigti, tie tiek glabāti atsevišķos failos, pārbaudes darbi nav pabeigti.
 ```
