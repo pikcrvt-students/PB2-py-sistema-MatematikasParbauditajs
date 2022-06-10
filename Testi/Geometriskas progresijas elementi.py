@@ -20,4 +20,5 @@ while True:
         else:
             break
     except:
+        print('Notika kļūme')
         continue

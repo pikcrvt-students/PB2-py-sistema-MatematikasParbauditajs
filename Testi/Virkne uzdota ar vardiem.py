@@ -1,5 +1,5 @@
 from random import randint
-def pārbaude(skaitlis):
+def parbaude(skaitlis):
     for i in range(4):
         if int(input()) != skaitlis * (i+1):
             return False
@@ -10,7 +10,7 @@ while True:
         atkartot = ''
         print('Pēteris iedomājās virkni, kuru veido skaitļa '+str(skaitlis)+' dalāmie augošā secībā.\nUzraksti pirmos četrus šīs virknes locekļus!')
         atbildes = []
-        if pārbaude(skaitlis):
+        if parbaude(skaitlis):
             print('Tava piedāvātā virkne ir pareiza!')
         else:
             print('Tava piedāvātā virkne nav pareiza!')
@@ -21,6 +21,7 @@ while True:
         else:
             break
     except:
+        print('Notika kļūme')
         continue
 
     

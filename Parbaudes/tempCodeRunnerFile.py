@@ -1,0 +1,1 @@
+        rezultati.append('1')

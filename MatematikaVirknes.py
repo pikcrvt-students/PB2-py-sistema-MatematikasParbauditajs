@@ -24,6 +24,7 @@ def lasit_teoriju():
         izveleta_teorija = input('Ievadi kādas teorijas nosaukumu lai to apskatītu: ')
     faila_informacija = open('Teorijas\\'+izveleta_teorija+'.txt', 'r', encoding='utf-16')
     print(faila_informacija.read())
+    faila_informacija.close()
     while vai_turpinat != '1' and vai_turpinat != '0':
         vai_turpinat = input('Vai vēlies lasit citu failu? Jā - 1 / Nē - 0 ')
     if vai_turpinat == '1':
@@ -55,8 +56,27 @@ def veikt_testus():
     else:
         print('Kautkas ar veikt_testus funkciju nav kartiba, provesim ieslegt velreiz')
         return True
+
 def veikt_parbaudes_darbus():
-    pass
+    Parbaudes_vieta = ('Parbaudes')
+    pieejamas_parbaudes = os.listdir(Parbaudes_vieta)
+    izveleta_parbaude = ''
+    vai_turpinat = ''
+    print('Tev ir pieejamas šādi testi: ')
+    for i in pieejamas_parbaudes:
+        print(i.strip('.py'))
+    while izveleta_parbaude + '.py' not in pieejamas_parbaudes:
+        izveleta_parbaude = input('Ievadi kādas teorijas nosaukumu lai to apskatītu: ')
+    os.startfile('Testi\\'+izveleta_parbaude+'.py')
+    while vai_turpinat != '1' and vai_turpinat != '0':
+        vai_turpinat = input('Vai vēlies veikt citu testu? Jā - 1 / Nē - 0 ')
+    if vai_turpinat == '1':
+        return True
+    elif vai_turpinat == '0':
+        return False
+    else:
+        print('Kautkas ar veikt_testus funkciju nav kartiba, provesim ieslegt velreiz')
+        return True
 def apskatit_parbaudes_darbu_rezultatus():
     pass
 def darbu_veidosanas_pamaciba():
