@@ -67,7 +67,7 @@ def veikt_parbaudes_darbus():
         print(i.strip('.py'))
     while izveleta_parbaude + '.py' not in pieejamas_parbaudes:
         izveleta_parbaude = input('Ievadi kādas teorijas nosaukumu lai to apskatītu: ')
-    os.startfile('Testi\\'+izveleta_parbaude+'.py')
+    os.startfile('Parbaudes\\'+izveleta_parbaude+'.py')
     while vai_turpinat != '1' and vai_turpinat != '0':
         vai_turpinat = input('Vai vēlies veikt citu testu? Jā - 1 / Nē - 0 ')
     if vai_turpinat == '1':
@@ -78,7 +78,13 @@ def veikt_parbaudes_darbus():
         print('Kautkas ar veikt_testus funkciju nav kartiba, provesim ieslegt velreiz')
         return True
 def apskatit_parbaudes_darbu_rezultatus():
-    pass
+    vards = input('Ievadi savu vardu un uzvardu ')
+    f = open(vards + '.txt', 'r')
+    content = f.read()
+    print(content)
+    f.close()
+    turpinat = input('Ja velaties iziet, ievadiet jebkuru pogu')
+    return True
 def darbu_veidosanas_pamaciba():
     pass
 
