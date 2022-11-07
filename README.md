@@ -1,6 +1,6 @@
 # Virkņu tēmas pārbaudes programma (Ver. 1)
 
-Programma satur sevī matemātikas temata 'Virknes' teoriju, zināšanu pārbaudes un pārbaudes darbus.
+Programma satur sevī matemātikas temata 'Virknes', 'Geometriska progresija', 'Aritmetiska progresija' teoriju, zināšanu pārbaudes un pārbaudes darbus.
 
 ## Instalācija
 
